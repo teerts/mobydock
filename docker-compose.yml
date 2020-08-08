@@ -1,9 +1,10 @@
 postgres:
   image: postgres:12.3
+  restart: always
   environment:
-    POSTGRES_USER: mobydock
-    POSTGRES_PASSWORD: yourpassword
-    POSTGRES_HOST_AUTH_METHOD: trust
+    POSTGRES_USER: 'mobydock'
+    POSTGRES_PASSWORD: 'yourpassword'
+    POSTGRES_HOST_AUTH_METHOD: 'trust'
   ports:
     - '5432:5432'
   volumes:
